@@ -1,20 +1,65 @@
 <!DOCTYPE html>
-<html lang="esp MX">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi práctica de HTML semántica</title>
+    <title>Mi práctica de html semantico</title>
 </head>
 <body>
-    <!-- Header es la sección superior de la página y generalmente incluye información introductoria como el título y el menú de navegación-->
+    <!-- Header es la sección superior de la página y generalmente incluye información introductoria,
+     como el título y el menú de navegación -->
      <header>
         <h1>Bienvenidos a mi sitio web</h1>
-        <nav>
+        <!-- Menú de navegación -->
+         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre mi</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#intereses">Intereses</a></li>
+                <li><a href="#enlaces">Enlaces</a></li>
             </ul>
-        </nav>
+         </nav>
+     </header>
+
+     <!-- main es la sección principal que contiene  el contenido central de la página. 
+      Se recomienda usar main solo una vez en cada página par indicar la parte más importante del
+      documento-->
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mi</h2>
+            <p>Me llamo Zoé Aguirre y estoy aprendiendo desarrollo web y etiquetas semánticas de html.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, rerum. Id ipsa sequi deserunt nihil! Delectus facere deserunt, minus non vel, quia accusamus nesciunt ut perferendis, necessitatibus commodi sunt eaque.</p>
+        </section>
+        <section id="intereses">
+            <h2>Intereses</h2>
+            <ul>
+                <li>Música</li>
+                <li>Idiomas</li>
+                <li>Museos</li>
+                <li>Futbol americano</li>
+            </ul>
+
+            <!-- figure agrupa contenido visual como imágenes, y es común utilizarla en conjunto con la etiqueta figcaption, que proporciona un título o descripción para el contenido visual -->
+             <figure>
+                <img src="https://aristeguinoticias.com/_next/image/?url=https%3A%2F%2Feditorial.aristeguinoticias.com%2Fwp-content%2Fuploads%2F2024%2F11%2Fchiefs-kansas-city-10112024.jpg&w=3840&q=75" alt="Mahomes en Kansas City Chiefs" width="300" title="Mahomes">
+                <figcaption>Imagen represantiva de mis intereses. Mahomes es mi jugador favorito de Kansas City Chiefs</figcaption>
+             </figure>
+        </section>
+        <section id="enlaces">
+            <h2>Enlaces</h2>
+            <p>Visita estos sitios recomendados para aprender desarrollo web.</p>
+            <ul>
+                <!-- a es una etique de enlaces que generalmente viena compañada del atributo href donde agregamos la dirección a la cual queremos redireccionar, otro atributo comunmente utlizado es el de targer que da un control de cómo se va a abrir el enlace -->
+                <li>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3schools</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zoé Aguirre. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
